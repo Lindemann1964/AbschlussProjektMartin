@@ -1,4 +1,4 @@
-class Panzer {                                 // Klasse "Panzer"
+open class Panzer {                                 // Klasse "Panzer"
     var geschwindigkeit: Int                   // Eigenschaften der Klasse Panzer
     var leistung: Double
     var laenge: Double
@@ -9,8 +9,8 @@ class Panzer {                                 // Klasse "Panzer"
 
 
     constructor(
-        geschwindigkeit: Int,                // Konstrukter: Eigenschaften von A1 bis > H 4
-        leistung: Double,                    //
+        geschwindigkeit: Int,                  // Konstruktor: Eigenschaften von A1 bis > H 4
+        leistung: Double,
         laenge: Double,
         gewicht: Double,
         reichweite: Int,
@@ -70,8 +70,8 @@ class Panzer {                                 // Klasse "Panzer"
                 return ergebnis
             }
 
-            "5" -> {                               // Auswahl per Zahl in der Konsole eingeben
-                print("Geschwindigkeit")           // vergleich Geschwindigkeit der beiden Panzer
+            "5" -> {                                 // Auswahl per Zahl in der Konsole eingeben
+                print("Geschwindigkeit")             // vergleich Geschwindigkeit der beiden Panzer
                 var ergebnis=geschwindigkeit >= panzer.geschwindigkeit
                 println("Geschwindigkeit")
                 return ergebnis
@@ -83,15 +83,20 @@ class Panzer {                                 // Klasse "Panzer"
     }
 }
 //this ist der erste Panzer
+
 //panzer ist der zweite Panzer
+
 //auswahl ist ein String mit "1","2", etc...
 
 //Die Auswahl soll erstmal ignoriert werden und es soll immer die reichweite verglichen werden ( TEST )
 
 //Funktion soll true zurückgeben wenn der erste Panzer den Vergleich gewinnt
+
 //Funktion soll false zurückgeben wenn Panzer 2 den Vergleich gewinnt
 
+// Vererbung "Schwerer Kpz, Kampf Pz, SpähPz, SchützenPz, BergePz, JagdPz, FlakPz, PanzerHbz, TransportPz....//
 
+// Diagramm erstellen
 
 
 
