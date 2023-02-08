@@ -5,10 +5,14 @@ class Bergepanzer(
     gewicht: Double,
     reichweite: Int,
     name: String,
-    eckZeichen: String,
-    var auslageBruecke:Double
+    eckZeichen: String,                                               // * Klasse E1 > E4
+                                                                      // * Vererbung von Besonderheiten für FlakPz.
 ) : Panzer(geschwindigkeit, leistung, laenge, gewicht, reichweite, name, eckZeichen)
 {
+    override fun printPanzer() {
+        super.printPanzer()
+        println("Der Panzer kann eine Brücke verlegen")
+    }
 
 }
 

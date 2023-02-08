@@ -1,5 +1,5 @@
-open class Panzer {                                 // Klasse "Panzer"
-    var geschwindigkeit: Int                   // Eigenschaften der Klasse Panzer
+open class Panzer {                             //* Klasse "Panzer"
+    var geschwindigkeit: Int                    //* Eigenschaften der Klasse Panzer
     var leistung: Double
     var laenge: Double
     var gewicht: Double
@@ -9,7 +9,7 @@ open class Panzer {                                 // Klasse "Panzer"
 
 
     constructor(
-        geschwindigkeit: Int,                  // Konstruktor: Eigenschaften von A1 bis > H 4
+        geschwindigkeit: Int,                  //* Konstruktor: Eigenschaften von A1 bis > H 4
         leistung: Double,
         laenge: Double,
         gewicht: Double,
@@ -27,7 +27,7 @@ open class Panzer {                                 // Klasse "Panzer"
 
     }
 
-    fun printPanzer() {
+    open fun printPanzer() {
         println("Panzer:$eckZeichen")
         println(" - Name:$name")
         println("1 - Leistung:$leistung")

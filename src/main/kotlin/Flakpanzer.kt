@@ -5,11 +5,13 @@ class Flakpanzer(
     gewicht: Double,
     reichweite: Int,
     name: String,
-    eckZeichen: String,
-    var freundFeind:Boolean
+    eckZeichen: String,                                               // * KLasse G1 > G4
+                                                                     // * Vererbung von Besonderheiten für FlakPz.
 ) : Panzer(geschwindigkeit,leistung,laenge,gewicht,reichweite,name,eckZeichen){
-
+    override fun printPanzer() {
+        super.printPanzer()
+        println("Er hat eine Freund und Feind kennung")
+    }
 }
 
 
-//* Pz, SpähPz, SchützenPz, BergePz, JagdPz, FlakPz, PanzerHbz, TransportPz....//
